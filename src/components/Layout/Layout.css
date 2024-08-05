@@ -1,0 +1,17 @@
+.main {
+    width: 80%;
+    padding: 0 10%;
+    height: 100vh;
+    font-family: var(--font);
+  
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 2rem;
+    flex: 1;
+}

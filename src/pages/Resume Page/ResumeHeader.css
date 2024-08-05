@@ -1,0 +1,15 @@
+#resume-header {
+    width: 50%;
+}
+
+#resume-header-title {
+    font-size: 50pt;
+    font-weight: bold;
+    line-height: 0.9;
+
+    color: var(--primary-text-color);
+}
+
+#resume-header-description {
+    color: var(--secondary-text-color);
+}
