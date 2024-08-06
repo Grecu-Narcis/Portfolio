@@ -1,10 +1,14 @@
 import './Navbar.css';
 import { IoMoon, IoSunnyOutline } from 'react-icons/io5';
 import NavbarItems from './navbar-items';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoMdClose } from 'react-icons/io';
 
 export default function Navbar() {
+    const [showSideMenu, setShowSideMenu] = useState<boolean>(false);
+
     const themeContext = useContext(ThemeContext)!;
     const isDark = themeContext.isDark;
     const setIsDark = themeContext.setIsDark;
@@ -14,8 +18,10 @@ export default function Navbar() {
             <div id='name-initials'>GN</div>
 
             <div id='options'>
-                {NavbarItems.map((item) => (
-                    <span className='option-link'>{item}</span>
+                {NavbarItems.map((item, index) => (
+                    <span className='option-link' key={index}>
+                        {item}
+                    </span>
                 ))}
 
                 {isDark ? (
@@ -23,7 +29,25 @@ export default function Navbar() {
                 ) : (
                     <IoMoon id='toggle' onClick={() => setIsDark(true)} />
                 )}
+
+                <GiHamburgerMenu id='side-menu-toggle' onClick={() => setShowSideMenu(true)} />
             </div>
+
+            {showSideMenu && (
+                <>
+                    <div id='side-menu'>
+                        <IoMdClose id='side-menu-close' onClick={() => setShowSideMenu(false)} />
+
+                        <div>
+                            {NavbarItems.map((item, index) => (
+                                <div className='side-option-link' key={index}>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </>
+            )}
         </div>
     );
 }

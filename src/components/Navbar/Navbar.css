@@ -60,3 +60,53 @@
         width: 100%;
     }
 }
+
+#side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: dynamic-width 0.5s;
+}
+
+#side-menu-toggle {
+    display: none;
+}
+
+#side-menu-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    font-size: 16pt;
+}
+
+#side-menu-close:hover {
+    cursor: pointer;
+}
+
+.side-option-link {
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 16pt;
+}
+
+@media screen and (max-width: 480px) {
+    #side-menu-toggle {
+        display: block;
+    }
+
+    .option-link {
+        display: none;
+    }
+}
