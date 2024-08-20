@@ -5,8 +5,8 @@ export default function ResumeHeader() {
         <div id='resume-header'>
             <div id='resume-header-title'> Hi, I'm Grecu Narcis</div>
             <div id='resume-header-description'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eligendi doloremque incidunt? Sed soluta magnam reiciendis
-                fuga repellendus molestiae ab, voluptas aliquid sunt consectetur tenetur impedit consequuntur ipsam cupiditate repudiandae.
+                Welcome to my digital space! I am a Computer Science student with experience at Microsoft and Bitdefender. Passionate about
+                coding, football, and traveling, here I share insights from my tech journey and adventures off the screen.
             </div>
         </div>
     );
