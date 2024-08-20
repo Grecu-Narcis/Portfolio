@@ -3,7 +3,7 @@
 }
 
 #resume-header-title {
-    font-size: 50pt;
+    font-size: 60pt;
     font-weight: bold;
     line-height: 0.9;
 
@@ -11,5 +11,6 @@
 }
 
 #resume-header-description {
+    margin-top: 1rem;
     color: var(--secondary-text-color);
 }

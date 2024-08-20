@@ -1,0 +1,13 @@
+#skills-content {
+    list-style-position: outside;
+    padding-left: 1rem;
+}
+
+.skill-item {
+    color: var(--secondary-text-color);
+    line-height: 1.5lh;
+}
+
+.skill-item > strong {
+    color: var(--primary-text-color);
+}
