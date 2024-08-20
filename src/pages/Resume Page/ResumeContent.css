@@ -29,3 +29,9 @@
 #resume-sections {
     flex: 1;
 }
+
+@media screen and (max-width: 480px) {
+    #resume-content {
+        flex-direction: column;
+    }
+}

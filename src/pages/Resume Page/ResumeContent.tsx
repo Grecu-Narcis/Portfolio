@@ -1,5 +1,5 @@
 import GenericSection from '../../components/Resume Sections/Generic Section/GenericSection';
-import SkillsSection from '../../components/Resume Sections/SkillsSection/SkillsSection';
+import SkillsSection from '../../components/Resume Sections/Skills Section/SkillsSection';
 import './ResumeContent.css';
 
 export default function ResumeContent() {
