@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { IoMoon, IoSunnyOutline } from 'react-icons/io5';
 import NavbarItems from './navbar-items';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
@@ -12,6 +12,11 @@ export default function Navbar() {
     const themeContext = useContext(ThemeContext)!;
     const isDark = themeContext.isDark;
     const setIsDark = themeContext.setIsDark;
+
+    useEffect(() => {
+        if (showSideMenu) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'auto';
+    }, [showSideMenu]);
 
     return (
         <div id='navbar'>

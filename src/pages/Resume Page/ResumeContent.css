@@ -1,0 +1,31 @@
+#resume-content {
+    display: flex;
+    gap: 4rem;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#profile-image {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+}
+
+#name {
+    color: var(--primary-text-color);
+}
+
+#position {
+    color: var(--secondary-text-color);
+}
+
+#resume-sections {
+    flex: 1;
+}
