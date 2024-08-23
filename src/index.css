@@ -6,6 +6,8 @@
 
   --primary-text-color: #fdfefe;
   --secondary-text-color: #b2babb;
+
+  --list-padding: 2rem;
 }
 
 [data-theme="light"], [data-theme="light"] * {

@@ -1,6 +1,6 @@
 #skills-content {
     list-style-position: outside;
-    padding-left: 1rem;
+    padding-left: var(--list-padding);
 }
 
 .skill-item {
