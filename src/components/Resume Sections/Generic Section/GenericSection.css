@@ -1,4 +1,33 @@
+.resume-section {
+    position: relative;
+}
+
 .section-title {
     font-weight: bold;
     font-size: 18pt;
+    margin-bottom: 1rem;
 }
+
+.resume-section > hr {
+    display: none;
+}
+
+.resume-section:not(:last-child) > hr {
+    display: block;
+    height: 0px;
+    border: none;
+    border-top: 1px solid var(--secondary-text-color);
+
+    margin: 1.5rem 0;
+    background-color: var(--secondary-text-color);
+}
+
+/* .resume-section:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-text-color);
+
+    bottom: 0;
+} */

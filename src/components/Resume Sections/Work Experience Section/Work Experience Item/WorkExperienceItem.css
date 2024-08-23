@@ -1,0 +1,38 @@
+.work-experience-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.work-details {
+    color: var(--secondary-text-color);
+}
+
+.work-details strong {
+    color: var(--primary-text-color);
+}
+
+.position {
+    margin-bottom: 0.8rem;
+    font-size: 15pt;
+}
+
+.location {
+    margin-bottom: 0.4rem;
+}
+
+.job-description {
+    margin-top: 1rem;
+}
+
+.job-description ul {
+    padding-left: var(--list-padding);
+    color: var(--secondary-text-color);
+    line-height: 1.2lh;
+}
+
+.job-description li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.job-description strong {
+    color: var(--primary-text-color);
+}

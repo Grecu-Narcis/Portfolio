@@ -2,7 +2,6 @@ import skills from './skills';
 import './SkillsSection.css';
 
 export default function SkillsSection() {
-    console.log(skills);
     return (
         <ul id='skills-content'>
             {[...skills.keys()].map((skillCategory, index) => (
