@@ -1,3 +1,4 @@
+import AwardsSection from '../../components/Resume Sections/Awards Section/AwardsSection';
 import GenericSection from '../../components/Resume Sections/Generic Section/GenericSection';
 import PersonalProjectsSection from '../../components/Resume Sections/Personal Projects Section/PersonalProjectsSection';
 import SkillsSection from '../../components/Resume Sections/Skills Section/SkillsSection';
@@ -35,6 +36,10 @@ export default function ResumePage() {
 
                     <GenericSection title='Personal projects'>
                         <PersonalProjectsSection />
+                    </GenericSection>
+
+                    <GenericSection title='Awards'>
+                        <AwardsSection />
                     </GenericSection>
                 </div>
             </div>

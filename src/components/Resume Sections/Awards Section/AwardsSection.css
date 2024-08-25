@@ -1,0 +1,11 @@
+#awards strong {
+    color: var(--primary-text-color);
+}
+
+#awards {
+    color: var(--secondary-text-color);
+}
+
+#awards ul {
+    padding-left: var(--list-padding);
+}
