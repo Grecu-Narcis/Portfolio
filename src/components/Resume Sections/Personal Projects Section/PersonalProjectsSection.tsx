@@ -13,7 +13,7 @@ export default function PersonalProjectsSection() {
                     </li>
 
                     <li>
-                        <strong>Implemented</strong> comprehensive car management for dealers, including CRUD functionalities, geolocation
+                        <strong>Implemented</strong> comprehensive car management for dealers, including CRUD functionalities, geolocation{' '}
                         <strong>integration for map display</strong> and the ability to upload images.
                     </li>
 

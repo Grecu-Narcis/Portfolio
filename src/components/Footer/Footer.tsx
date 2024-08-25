@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaRegCopyright } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <div id='footer'>
+        <footer id='footer'>
             <div id='icons'>
                 <a href='mailto:ngrecu09@gmail.com'>
                     <MdEmail />
@@ -21,6 +21,6 @@ export default function Footer() {
                 <FaRegCopyright className='credits-item' />
                 <div className='credits-item'>2024</div>
             </div>
-        </div>
+        </footer>
     );
 }
