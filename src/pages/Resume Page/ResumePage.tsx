@@ -1,3 +1,4 @@
+import Layout from '../../components/Layout/Layout';
 import AwardsSection from '../../components/Resume Sections/Awards Section/AwardsSection';
 import GenericSection from '../../components/Resume Sections/Generic Section/GenericSection';
 import PersonalProjectsSection from '../../components/Resume Sections/Personal Projects Section/PersonalProjectsSection';
@@ -7,7 +8,7 @@ import './ResumePage.css';
 
 export default function ResumePage() {
     return (
-        <>
+        <Layout>
             <div id='resume-header'>
                 <div id='resume-header-title'> Hi, I'm Grecu Narcis</div>
                 <div id='resume-header-description'>
@@ -43,6 +44,6 @@ export default function ResumePage() {
                     </GenericSection>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }

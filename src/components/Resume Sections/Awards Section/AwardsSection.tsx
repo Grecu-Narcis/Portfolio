@@ -7,8 +7,8 @@ export default function AwardsSection() {
     return (
         <div id='awards'>
             <ul>
-                {awards.map((award) => (
-                    <li>
+                {awards.map((award, index) => (
+                    <li key={index}>
                         <AwardItem {...award} />
                     </li>
                 ))}
