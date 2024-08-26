@@ -1,0 +1,13 @@
+#projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, max-content);
+
+    gap: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    #projects-list {
+        grid-template-columns: 1fr;
+    }
+}

@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [showSideMenu, setShowSideMenu] = useState<boolean>(false);
@@ -24,9 +25,9 @@ export default function Navbar() {
 
             <div id='options'>
                 {NavbarItems.map((item, index) => (
-                    <span className='option-link' key={index}>
-                        {item}
-                    </span>
+                    <Link to={`/${item.toLowerCase()}`} key={index}>
+                        <span className='option-link'>{item}</span>
+                    </Link>
                 ))}
 
                 {isDark ? (
@@ -45,9 +46,12 @@ export default function Navbar() {
 
                         <div>
                             {NavbarItems.map((item, index) => (
-                                <div className='side-option-link' key={index}>
-                                    {item}
-                                </div>
+                                <Link to={`/${item.toLowerCase()}`} key={index}>
+                                    {' '}
+                                    <div className='side-option-link' key={index}>
+                                        {item}
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     </div>

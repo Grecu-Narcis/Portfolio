@@ -2,10 +2,12 @@
 
 :root {
   --font: "Roboto";
-  --background-color: #17202a;
+  --background-color: #030712;
 
   --primary-text-color: #fdfefe;
   --secondary-text-color: #b2babb;
+
+  --border-color: #34495e;
 
   --list-padding: 2rem;
 }
@@ -15,6 +17,8 @@
 
   --primary-text-color: #17202a;
   --secondary-text-color: #6b7280;
+
+  --border-color: #e5e8e8 ;
 }
 
 * {
