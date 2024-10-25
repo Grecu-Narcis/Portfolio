@@ -21,7 +21,7 @@ export default function ResumePage() {
 
             <div id='resume-content'>
                 <div id='details'>
-                    <img id='profile-image' src='profile.jpg' />
+                    <img id='profile-image' src='profile.webp' />
                     <h1 id='name'>Grecu Narcis</h1>
                     <p id='position'>Software Developer</p>
                 </div>
