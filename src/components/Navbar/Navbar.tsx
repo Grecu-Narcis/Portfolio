@@ -5,11 +5,12 @@ import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const [showSideMenu, setShowSideMenu] = useState<boolean>(false);
 
+    const navigate = useNavigate();
     const themeContext = useContext(ThemeContext)!;
     const isDark = themeContext.isDark;
     const setIsDark = themeContext.setIsDark;
@@ -21,7 +22,9 @@ export default function Navbar() {
 
     return (
         <div id='navbar'>
-            <div id='name-initials'>GN</div>
+            <div id='name-initials' onClick={() => navigate('/')}>
+                GN
+            </div>
 
             <div id='options'>
                 {NavbarItems.map((item, index) => (
