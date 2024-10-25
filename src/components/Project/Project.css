@@ -19,8 +19,7 @@
 }
 
 .project-details {
-    padding: 1rem;
-    
+    padding: 0 1rem;
     flex: 1;
     position: relative;
 }
