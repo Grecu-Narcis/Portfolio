@@ -28,6 +28,7 @@
     color: var(--primary-text-color);
     font-weight: bold;
     font-size: 18pt;
+    margin-top: 0.5rem;
 }
 
 .project-description {
@@ -53,5 +54,9 @@
 @media screen and (max-width: 480px) {
     .project-cover {
         height: 175px;
+    }
+
+    .project-description {
+        margin-bottom: 2rem;
     }
 }
