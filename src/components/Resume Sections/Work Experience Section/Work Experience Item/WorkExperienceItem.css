@@ -26,7 +26,6 @@
 .job-description ul {
     padding-left: var(--list-padding);
     color: var(--secondary-text-color);
-    line-height: 1.2lh;
 }
 
 .job-description li:not(:last-child) {

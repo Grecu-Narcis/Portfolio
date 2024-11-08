@@ -1,37 +1,33 @@
-.project:not(:last-child) {
+.personal-project:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-.project-details {
+.personal-project-details {
     color: var(--secondary-text-color);
 }
 
-.project-details strong {
+.personal-project-details strong {
     color: var(--primary-text-color);
 }
 
-.project-name {
+.personal-project-name {
     margin-bottom: 0.2rem;
     font-size: 15pt;
 }
 
-.project-description {
+.personal-project-description {
     margin-top: 1rem;
 }
 
-.project-description ul {
+.personal-project-description ul {
     padding-left: var(--list-padding);
     color: var(--secondary-text-color);
 }
 
-.project-description strong {
+.personal-project-description strong {
     color: var(--primary-text-color);
 }
 
-.project-description li {
-    line-height: 1.2lh;
-}
-
-.project-description li:not(:last-child) {
+.personal-project-description li:not(:last-child) {
     margin-bottom: 0.5rem;
 }

@@ -11,7 +11,7 @@
 }
 
 #resume-header-title {
-    font-size: 60pt;
+    font-size: var(--header-title-font-size);
     font-weight: bold;
     line-height: 0.9;
 
@@ -22,7 +22,7 @@
     margin-top: 1rem;
     color: var(--secondary-text-color);
 
-    font-size: 14pt;
+    font-size: var(--header-description-font-size);
     line-height: 1.2lh;
 }
 
@@ -71,13 +71,5 @@
 
     #resume-header {
         width: 100%;
-    }
-
-    #resume-header-title {
-        font-size: 30pt;
-    }
-    
-    #resume-header-description {
-        font-size: 12pt;
     }
 }
