@@ -10,6 +10,9 @@
   --border-color: #34495e;
 
   --list-padding: 2rem;
+
+  --header-title-font-size: 50pt;
+  --header-description-font-size: 14pt;
 }
 
 [data-theme="light"], [data-theme="light"] * {
@@ -32,6 +35,17 @@ body {
   height: 100%;
 }
 
+li {
+  line-height: 1.2lh;
+}
+
 .demo {
   color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --header-title-font-size: 30pt;
+    --header-description-font-size: 12pt;
+  }
 }
